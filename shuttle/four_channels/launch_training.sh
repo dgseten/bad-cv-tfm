@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+python object_detection/model_main.py --alsologtostderr --pipeline_config_path="/home/seten/TFM/models/model_shuttlecock_6_channels_0/faster_rcnn_resnet101_shuttle.config" --model_dir="/home/seten/TFM/models/model_shuttlecock_6_channels_0" sample_1_of_n_eval_examples=1

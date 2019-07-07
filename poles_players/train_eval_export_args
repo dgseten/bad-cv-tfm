@@ -1,0 +1,5 @@
+# Train
+python bad-cv-tfm/object_detection/model_main.py --alsologtostderr --pipeline_config_path="/home/seten/TFM/models/model_shuttlecock_0_junio/faster_rcnn_resnet101_shuttle.config" --model_dir="/home/seten/TFM/models/model_shuttlecock_0_junio/train" sample_1_of_n_eval_examples=3 --num_train_steps=25000000
+
+# Export graph
+python bad-cv-tfm/object_detection/export_inference_graph.py /home/seten/TFM/bad-cv-tfm/object_detection/export_inference_graph.py --input_type image_tensor --input_shape -1,-1,-1,3 --pipeline_config_path "/home/seten/TFM/models/model_shuttlecock_0_junio/faster_rcnn_resnet101_shuttle.config" --trained_checkpoint_prefix "/home/seten/TFM/models/model_shuttlecock_0_junio/train/model.ckpt-224051" --output_directory "/home/seten/TFM/exported_graphs/model_shuttlecock_0_junio"

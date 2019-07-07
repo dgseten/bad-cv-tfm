@@ -1,0 +1,12 @@
+tensorflow-gpu == 1.12.0
+scikit-image >= 0.14
+pillow >= 5.4
+numpy >=1.15
+matplotlib >= 3.0
+opencv-python >= 3.4
+Cython
+contextlib2
+lxml
+jupyter
+youtube_dl
+joblib
